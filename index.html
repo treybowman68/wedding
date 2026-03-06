@@ -1,13 +1,197 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>wedding</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="You're invited to the wedding of Ethan & Aurora — June 14, 2026 · Savannah, Georgia" />
+  <title>Ethan &amp; Aurora — June 14, 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="#hero" class="nav-monogram">T &amp; M</a>
+    <ul class="nav-links">
+      <li><a href="#couple">Us</a></li>
+      <li><a href="#details">Details</a></li>
+      <li><a href="#dates">Favorite Dates</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">We're getting married!!</p>
+      <h1 class="hero-names">
+        Trey
+        <span class="hero-ampersand">&amp;</span>
+        Madelyn
+      </h1>
+      <div class="hero-divider">
+        <span class="hero-divider-dot"></span>
+      </div>
+      <p class="hero-date">Saturday, April 11th, 2026 </p>
+      <p class="hero-location">Saratoga Springs &middot; Utah Temple</p>
+    </div>
+  </section>
+
+  <!-- COUPLE -->
+  <section id="couple" class="section couple-section">
+    <div class="section-inner">
+      <h2 class="section-title">Meet the Two of Us</h2>
+      <p class="section-subtitle">Two hearts, one perfectly imperfect love story</p>
+      <div class="couple-grid">
+        <div class="couple-card couple-card--him">
+          <div class="couple-img-frame">
+            <img src="/images/groom.jpg" alt="Trey, the groom" />
+          </div>
+          <h3 class="couple-name">Trey Bowman</h3>
+          <ul class="couple-bio-list">
+            <li>Diehard Denver Broncos fan</li>
+            <li>Loves Legos</li>
+            <li>Studying Computer Software Engineering</li>
+            <li>Madelyn's Sweetheart</li>
+          </ul>
+        </div>
+
+        <div class="couple-middle">
+          <span class="couple-ampersand">&amp;</span>
+          <span class="couple-since">Together since June 2025</span>
+        </div>
+
+        <div class="couple-card couple-card--her">
+          <div class="couple-img-frame">
+            <img src="/images/bride.jpg" alt="Madelyn, the bride" />
+          </div>
+          <h3 class="couple-name">Madelyn Griffiths</h3>
+          <ul class="couple-bio-list">
+            <li>Loves cooking Slders</li>
+            <li>Ohio State Buckeye fan</li>
+            <li>Study Healthcare Administration</li>
+            <li>Pinspired home chef</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WAVE DIVIDER -->
+  <div class="wave-divider" style="background: #FFE5E5;">
+    <svg viewBox="0 0 1200 60" preserveAspectRatio="none" fill="#ffffff">
+      <path d="M0,0 C300,60 900,60 1200,0 L1200,60 L0,60 Z" />
+    </svg>
+  </div>
+
+  <!-- WEDDING DETAILS -->
+  <section id="details" class="section details-section">
+    <div class="section-inner">
+      <p class="section-label">Mark Your Calendar</p>
+      <h2 class="section-title">Wedding Details</h2>
+      <p class="section-subtitle">We've been dreaming of this day &mdash; we can't wait to share it with you</p>
+
+      <div class="details-grid">
+        <!-- Countdown placeholder — add your JS countdown script here -->
+        <div class="detail-card countdown-card">
+          <p class="countdown-title">Counting down the days&hellip;</p>
+          <div class="countdown-boxes">
+            <div class="countdown-box">
+              <div class="countdown-num" id="cd-days">--</div>
+              <span class="countdown-unit">Days</span>
+            </div>
+            <span class="countdown-sep">:</span>
+            <div class="countdown-box">
+              <div class="countdown-num" id="cd-hours">--</div>
+              <span class="countdown-unit">Hours</span>
+            </div>
+            <span class="countdown-sep">:</span>
+            <div class="countdown-box">
+              <div class="countdown-num" id="cd-minutes">--</div>
+              <span class="countdown-unit">Minutes</span>
+            </div>
+            <span class="countdown-sep">:</span>
+            <div class="countdown-box">
+              <div class="countdown-num" id="cd-seconds">--</div>
+              <span class="countdown-unit">Seconds</span>
+            </div>
+          </div>
+          <p class="countdown-note">It's the final countdown!</p>
+        </div>
+
+        <!-- Map embed placeholder — paste Google Maps iframe here -->
+        <div class="detail-card map-card">
+          <span class="map-placeholder-icon">📍</span>
+          <p class="map-placeholder-text">Saratoga Springs Utah Temple</p>
+          <p class="map-placeholder-sub">Paste your Google Maps &lt;iframe&gt; embed here</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR DATES -->
+  <section id="dates" class="section dates-section">
+    <div class="section-inner">
+      <p class="section-label">How We Got Here</p>
+      <h2 class="section-title">Our Favourite Dates</h2>
+      <p class="section-subtitle">A few of the moments we'll never stop talking about</p>
+
+      <div class="dates-grid">
+        <div class="date-card">
+          <img src="/images/date-coffee.jpg" alt="First coffee date" class="date-card-img" />
+          <span class="date-card-date">March 2021</span>
+          <div class="date-card-body">
+            <span class="date-card-tag">How it started</span>
+            <h3 class="date-card-title">That First Coffee</h3>
+            <p class="date-card-desc">What was meant to be a 30-minute chat turned into a 4-hour conversation. We closed down the café and neither of us noticed.</p>
+          </div>
+        </div>
+
+        <div class="date-card">
+          <img src="/images/date-hike.jpg" alt="Sunset hike" class="date-card-img" />
+          <span class="date-card-date">July 2021</span>
+          <div class="date-card-body">
+            <span class="date-card-tag">Adventure</span>
+            <h3 class="date-card-title">The Sunrise Hike</h3>
+            <p class="date-card-desc">Ethan got us lost for 2 hours. Aurora didn't even mind. That's when we both quietly knew this was different.</p>
+          </div>
+        </div>
+
+        <div class="date-card">
+          <img src="/images/date-dinner.jpg" alt="First fancy dinner" class="date-card-img" />
+          <span class="date-card-date">Nov 2021</span>
+          <div class="date-card-body">
+            <span class="date-card-tag">Milestone</span>
+            <h3 class="date-card-title">First Official Date</h3>
+            <p class="date-card-desc">Reservations at Maison &mdash; fancy napkins, nervous laughter, and the first time Ethan said "I think I'm falling for you."</p>
+          </div>
+        </div>
+
+        <div class="date-card">
+          <img src="/images/date-festival.jpg" alt="Music festival" class="date-card-img" />
+          <span class="date-card-date">Aug 2022</span>
+          <div class="date-card-body">
+            <span class="date-card-tag">Our song</span>
+            <h3 class="date-card-title">The Festival</h3>
+            <p class="date-card-desc">We danced in the crowd to our favourite song at sunset. Ethan cried. He'll deny this, but we all know what happened.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p class="footer-monogram">T &amp; M</p>
+    <p class="footer-date">April 11th, 2026 &middot; Saratoga Springs Utah Temple</p>
+    <p class="footer-hashtag">#TreyAndMadelynForEternity</p>
+    <div class="footer-divider"></div>
+    <p class="footer-love">Made with love from Oklahoma and Texas</p>
+  </footer>
+
+</body>
 </html>
