@@ -244,6 +244,25 @@ img {
   }
 }
 
+#hero button {
+  margin-top: 2rem;
+  padding: 0.75rem 1.8rem;
+  font-family: "Jost", sans-serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #ff9f8c;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+} 
+
+#hero button:hover {
+  background-color: #ff7a5c;
+}
+
 /* ---- SHARED SECTION ---- */
 .section {
   padding: 7rem 2rem;
@@ -559,45 +578,6 @@ img {
   opacity: 0.45;
   letter-spacing: 0.12em;
   margin-top: 1.5rem;
-}
-
-/* Map placeholder */
-.map-card {
-  grid-column: span 2;
-  background: #ffe5e5;
-  border: 1.5px dashed #ffc4bf !important;
-  border-radius: 1.5rem;
-  min-height: 320px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.8rem;
-  padding: 2rem;
-  text-align: center;
-}
-
-.map-card:hover {
-  transform: none !important;
-  box-shadow: none !important;
-}
-
-.map-placeholder-icon {
-  font-size: 3rem;
-}
-
-.map-placeholder-text {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 1.3rem;
-  color: #2e3d59;
-  opacity: 0.6;
-}
-
-.map-placeholder-sub {
-  font-size: 0.78rem;
-  color: #2e3d59;
-  opacity: 0.4;
-  letter-spacing: 0.08em;
 }
 
 /* ---- OUR DATES ---- */
