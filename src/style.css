@@ -580,9 +580,86 @@ img {
   margin-top: 1.5rem;
 }
 
+/* ---- RSVP ---- */
+#rsvp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background: #f7f7f7;
+  min-height: 100vh;
+}
+
+#rsvp-form {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 420px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#rsvp-form h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+#rsvp-form input,
+#rsvp-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: border 0.2s ease;
+}
+
+#rsvp-form input:focus,
+#rsvp-form textarea:focus {
+  outline: none;
+  border-color: #6c63ff;
+}
+
+#rsvp-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+#rsvp-form .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+
+  input {
+    width: auto;
+  }
+}
+
+#rsvp-form button {
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: #6c63ff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#rsvp-form button:hover {
+  background-color: #574fd6;
+}
+
 /* ---- FOOTER ---- */
 .footer {
-  background: #2e3d59;
+  background-color: #2e3d59;
   color: #ffffff;
   text-align: center;
   padding: 4rem 2rem;
